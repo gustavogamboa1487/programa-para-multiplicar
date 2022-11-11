@@ -8,7 +8,7 @@ class calculadora {
 
     function sumar($valor1,$valor2) {
         $this->oper1= $valor1 + $valor2;
-        echo $this->oper1." "."<br>";
+        echo "su suma es" . " ".$this->oper1." "."<br>";
 
     }
 
@@ -25,9 +25,22 @@ class calculadora {
     }
 }
 $inst1= new calculadora;
-$inst1->sumar (3,3);
-$inst1->multiplicar (5,6);
-$inst1->resultado();
+#$inst1->sumar ($valor1=$_POST["valor1"],$valor2=$_POST["valor2"]);
+$inst1->multiplicar ($valor1=$_POST["valor1"],$valor2=$_POST["valor2"]);
+#$inst1->resultado();
 
 
 ?>
+<br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./formulario.php"> <input type="button" value="volver"> </a> 
+</body>
+</html>
